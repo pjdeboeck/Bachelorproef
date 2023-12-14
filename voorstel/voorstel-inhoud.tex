@@ -1,0 +1,66 @@
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introduction}%
+\label{sec:introduction}
+
+IaC (Infrastructure as Code) is a popular choice among organizations aiming to be efficient, scalable and agile for their IT infrastructure. However implementing this in a well-established company that exists for a longer period of time presents unique challenges such as legacy systems and resistance to change. The aim of this paper is to establish a Proof of concept that companies can use to implement IaC and automation with the “best practices” in mind.
+On a request from KBC this paper will focus on the specific tools BitBucket and Stonebranch. BitBucket will be used for version and code control whilst stonebranch will be used for orchestration. At this moment many practices involve human interaction, which is something that we want to reduce for spending our resources in a more efficient way. Through practical insights and recommendations this research will help IT teams optimize their usage of BitBucket within the context of Active Directory.
+Outside from researching BitBucket and Stonebranch, this paper will establish what the best practices are for utilizing IaC in an Active Directory environment. It will research tools that could be useful to implement in the environment. Also, tools that could help to make the environment as secure as possible.
+The expected outcome of this research is a detailed research that companies could use to improve their IaC environment . This research is poised to deliver insights and best practices. The findings are expected to provide a roadmap for organizations, including KBC, enabling them to navigate the challenges of existing IT infrastructures and optimize their IaC implementations.
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{State-of-the-art}%
+\label{sec:state-of-the-art}
+
+Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+
+Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+
+Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+
+Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+
+Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodology}%
+\label{sec:methodology}
+
+At the start of the research there will be a Literature review to understand existing best practices and challenges related to implementing infrastructure as code in Active Directory environments. Scholarly articles, industry reports and case studies will be analysed to identify successful and problematic aspects of IaC. In particular there will be a focus on organizations with established IT infrastructures.
+Secondly there will be a case study Analysis. Analyzing the current state of IaC implementation, the tools that are in use, and the negatives faced by the company.
+Thirdly the tools in question would be looked at. An extensive research to evaluate BitBucket and its features focusing on its compatibility with Active Directory configurations. Also the tools used for IaC configurations will be looked at. And tools for implementing secrets. For the part of IaC tools the following will be looked at:
+\begin{itemize}
+  \item Ansible
+  \item Terraform
+  \item Chef
+  \item Puppet
+  \item CloudFormation
+  \item Pulumi
+\end{itemize}
+For the part of security the following tools would be looked at:
+\begin{itemize}
+  \item kubescan
+  \item Snyk
+  \item Coverity
+\end{itemize}
+There will also be a detailed research regarding Stonebranch to look at its features.
+The next step will be establishing the proof of concept on basis of the selected tools. KBC will give a sandbox environment that will be used for setting up the environment. There will be multiple iterations to validate the chosen tools and methodologies. There will be consultation with members of the team in question from KBC to deliver a working product with their desires in mind. A comparison will be made between the system that is in place and the POC. 
+With the environment set up there will be analysis from feedback from the team as well as a security analysis. With this information a conclusion will be made.
+At the end of the process the thesis will be written down. The thesis should explain how the POC was set up and how specific choices were made in the process.
+
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{expected results, conclusion}%
+\label{sec:expected_results}
+
+The research anticipates to deliver an environment for a team so that they can implement a secure IaC environment that they can for automatization.  These guidelines will address the challenges of implementing IaC specific with Active Directory environments covering version control strategies, security measurements, and efficient deployment orchestration. The result of using such an environment will reduce the workload on the team so they could work on other more “important” subjects. Additionally, this research will explore all possibilities within BitBucket and Stonebranch and how these tools could work together in an Active Directory environment.
